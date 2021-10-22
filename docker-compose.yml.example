@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+    botname:
+        container_name: incredible_name
+        restart: always
+        build:
+            ./
+        ports:
+            -   "8081:8081"
+        environment:
+            PORT: 8081
+            CREDENTIAL_PASSWORD: ""
+            CREDENTIAL_EMAIL: ""
